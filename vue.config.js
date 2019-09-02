@@ -1,3 +1,11 @@
 module.exports = {
-  lintOnSave: false
+  lintOnSave: false,
+  outputDir: '/dist/',
+  assetsDir: '/',
+  runtimeCompiler: true,
+
+  css: {
+    modules: true,
+    sourceMap: true
+  }
 }
