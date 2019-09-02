@@ -1,5 +1,5 @@
 module.exports = {
-  lintOnSave: false,
+  lintOnSave: true,
   outputDir: '/dist/',
   assetsDir: '/',
   runtimeCompiler: true,
