@@ -6,6 +6,7 @@
   ],
   "settings": {
     "editor.tabSize": 2,
-    "livereload.debug": true
+    "livereload.debug": true,
+    "html-css-class-completion.enableEmmetSupport": true
   }
 }

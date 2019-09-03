@@ -1,7 +1,7 @@
 module.exports = {
   lintOnSave: true,
-  outputDir: '/dist/',
-  assetsDir: '/',
+  outputDir: './dist/',
+  assetsDir: './',
   runtimeCompiler: true,
 
   css: {
