@@ -32,22 +32,32 @@
         <div class="clear-both"></div>
       </div>
     </header>
-    {{ page }}
+    <main class="maincontent" role="main">
+      <div class="container">
+        <div class="page">
+          <div id="page">
+            <article class="page-content" itemtype="http://schema.org/WebPage">
+              
+              <Configurator></Configurator>
+            
+            </article>
+          </div>
+        </div>
+      </div>
+    </main>
   </div>
 </template>
 
 <script>
-document.getElementsByTagName('body')[0].classList.add('color_scheme_green')
+import Configurator from "@/views/Configurator.vue";
+// document.getElementsByTagName('body')[0].classList.add('color_scheme_green')
 
-export default {
-  data() {
-    return { 
-      page 
-    }
+  export default {
+    name: "DevApp",
+    components: { Configurator }
   }
-}
 </script>
 
-<style>
-@import url('https://z-uno.z-wave.me/wa-data/public/site/themes/z-uno/default.css');
+<style scoped>
+  @import url("https://z-uno.z-wave.me/wa-data/public/site/themes/z-uno/default.css");
 </style>

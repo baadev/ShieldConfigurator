@@ -1,20 +1,20 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Page from './views/Page.vue'
+import DevApp from '@/views/DevApp.vue'
+import Configurator from '@/views/Configurator.vue'
 
 Vue.use(Router)
 
 export default new Router({
   mode: 'hash',
-  // todo: set path o
-  base: '/shield/configurator/',
   routes: [
-    { 
-      path: '/'
+    {
+      path: '/',
+      components: { page: Configurator }
     },
     {
       path: '/dev**',
-      components: {pages: Page}
+      components: { page: DevApp }
     }
   ]
 })

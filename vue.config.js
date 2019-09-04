@@ -5,7 +5,10 @@ module.exports = {
   runtimeCompiler: true,
 
   css: {
-    modules: true,
-    sourceMap: true
-  }
+    sourceMap: true,
+    extract: false
+  },
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/shield/configurator/'
+    : '/'
 }
