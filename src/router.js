@@ -6,15 +6,15 @@ import Configurator from '@/views/Configurator.vue'
 Vue.use(Router)
 
 export default new Router({
-  mode: 'hash',
-  routes: [
-    {
-      path: '/',
-      components: { page: Configurator }
-    },
-    {
-      path: '/dev**',
-      components: { page: DevApp }
-    }
-  ]
+ mode: 'hash',
+ routes: [
+  {
+   path: '/',
+   components: { page: Configurator }
+  },
+  {
+   path: '/dev**',
+   components: { page: DevApp }
+  }
+ ]
 })

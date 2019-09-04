@@ -1,0 +1,12 @@
+{
+  "folders": [
+    {
+      "path": "/home/alex/Documents/workplace/alex_development"
+    }
+  ],
+  "settings": {
+    "editor.tabSize": 2,
+    "livereload.debug": true,
+    "html-css-class-completion.enableEmmetSupport": true
+  }
+}

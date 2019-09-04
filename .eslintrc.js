@@ -6,8 +6,8 @@ module.exports = {
   node: true
  },
  parserOptions: {
+  sourceType: "module",
   parser: "babel-eslint",
-  sourceType: "module"
  },
  // https://github.com/vuejs/eslint-plugin-vue#priority-a-essential-error-prevention
  extends: [
@@ -25,7 +25,7 @@ module.exports = {
   // 'no-param-reassign': 'off',
   'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
   'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-  'indent': ['error', 1, { 'VariableDeclarator': 'first', "MemberExpression": 1 }],
+  'indent': ['off', 1, { 'VariableDeclarator': 'first', "MemberExpression": 1 }],
   'object-curly-spacing': ['error', 'always'],
   'comma-dangle': ['error', 'never'],
   'arrow-parens': ['error', 'as-needed'],
