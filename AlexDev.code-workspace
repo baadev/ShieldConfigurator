@@ -2,11 +2,9 @@
   "folders": [
     {
       "path": "."
+    },
+    {
+      "path": "/home/alex/Documents/workplace/z-wave/shield/todo"
     }
-  ],
-  "settings": {
-    "editor.tabSize": 2,
-    "livereload.debug": true,
-    "html-css-class-completion.enableEmmetSupport": true
-  }
+  ]
 }

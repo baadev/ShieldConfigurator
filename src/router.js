@@ -5,12 +5,16 @@ import Page from './views/Page.vue'
 Vue.use(Router)
 
 export default new Router({
+  mode: 'hash',
+  // todo: set path o
+  base: '/shield/configurator/',
   routes: [
+    { 
+      path: '/'
+    },
     {
-      path: '/dev/:userId',
-      components: {
-        'page-content': Page
-      }
+      path: '/dev**',
+      components: {pages: Page}
     }
   ]
 })

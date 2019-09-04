@@ -1,14 +1,15 @@
 <template>
   <div id="nav">
-    <DevHeader></DevHeader>
-    <a href="/dev">Dev</a>
-    <router-view name="page-content"></router-view>
+    <router-link :to="{ path: '/' }">/</router-link>
+    <router-view class="view" name="pages"></router-view>
   </div>
 </template>
 
 <script>
+import DevHeader from './views/DevHeader.vue'
+
 export default {
-  name: 'PageContent'
+  name
 }
 </script>
 

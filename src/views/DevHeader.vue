@@ -32,13 +32,22 @@
         <div class="clear-both"></div>
       </div>
     </header>
-    <Page />
+    {{ page }}
   </div>
 </template>
 
 <script>
+document.getElementsByTagName('body')[0].classList.add('color_scheme_green')
 
 export default {
-  name: "DevHeader"
-};
+  data() {
+    return { 
+      page 
+    }
+  }
+}
 </script>
+
+<style>
+@import url('https://z-uno.z-wave.me/wa-data/public/site/themes/z-uno/default.css');
+</style>
